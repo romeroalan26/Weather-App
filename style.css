@@ -1,0 +1,16 @@
+img {
+	position: relative;
+	animation: moveUpDown 2s infinite alternate;
+}
+
+@keyframes moveUpDown {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: 10px;
+	}
+	100% {
+		left: 0;
+	}
+}
