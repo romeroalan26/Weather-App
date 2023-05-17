@@ -50,7 +50,7 @@ const getWeather = function () {
 										class="display-4 mb-0 font-weight-bold"
 										style="color: #1c2331"
 									>
-										<b>${response.current.temp_c}</b>
+										<b>${response.current.temp_c}°</b>
 									</h1>
 									<span class="small" style="color: black"
 										>${response.current.condition.text}</span
