@@ -2,8 +2,11 @@
 // Selecting section container from HTML
 const sectionContainer = document.getElementById("section-container");
 
+// Calling the function to get the Weather
+getWeather();
+
 // Function that gets weather
-const getWeather = function () {
+function getWeather() {
 	// Method to get user's coords (latitude and longitude)
 	navigator.geolocation.getCurrentPosition(
 		function (position) {
@@ -106,6 +109,4 @@ const getWeather = function () {
 			console.error("Error getting location:", error);
 		}
 	);
-};
-
-getWeather();
+}
