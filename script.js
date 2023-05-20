@@ -2,6 +2,10 @@
 // Selecting section container from HTML
 const sectionContainer = document.getElementById("section-container");
 
+// Selecting loader
+
+const loader = document.querySelector(".loader");
+
 // Calling the function to get the Weather
 getWeather();
 
@@ -99,6 +103,8 @@ function getWeather() {
 			</div>
 				`;
 
+				//Removing loader
+				loader.style.opacity = 0;
 				// Inserting HTML into section-container
 				sectionContainer.insertAdjacentHTML("beforeend", html);
 			}
